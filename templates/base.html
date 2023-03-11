@@ -31,12 +31,12 @@
             </div>
         </nav>
     </header>
+    <section class="hero-section">
+        <h1>
+            Bluspan Professional Services
+        </h1>
+    </section>
     <main>
-        <section class="hero-section">
-            <h1>
-                Bluspan Professional Services
-            </h1>
-        </section>
         {% block main_content %}{% endblock %}
     </main>
     <footer>
@@ -59,6 +59,9 @@
             </ul>
         </div>
     </footer>
+    <script src="{{url_for ('static',filename='js/script.js')}}">
+
+    </script>
 </body>
 
 </html>
