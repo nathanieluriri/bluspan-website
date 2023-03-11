@@ -54,6 +54,36 @@ color:var(--paleLinkBlue);
 nav .links a{
     font-size: 1.2rem;
 }
+nav .hamburger-btn {
+    width:3.5rem;
+    height:3.2rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    padding-block:0.8rem;
+    display: grid;
+    place-items:center;
+
+}
+nav .hamburger-btn div{
+    width:2rem;
+    height:2px;
+    background:black;
+    position:relative;
+    transition:transform 1s;
+}
+nav .hamburger-btn:hover div:nth-of-type(1){
+    transform:rotate(-35deg) translateY(0.5rem);
+    left:-3px;
+}
+nav .hamburger-btn:hover div:nth-of-type(2){
+    opacity:0;
+}
+nav .hamburger-btn:hover div:nth-of-type(3){
+    transform:rotate(35deg) translateY(-0.5rem);
+    left:-3px;
+}
+
+
 /* Navbar end */
 /* Hero section start*/
 .hero-section{
@@ -158,7 +188,7 @@ text-align:center;
     content:"";
     position:absolute;
     width: 200%;
-    height:5px;
+    height:3px;
     background-color:inherit;
     bottom:-45%;
 }
@@ -207,4 +237,11 @@ footer ul:not(:first-of-type){
 footer ul:first-of-type{
     gap:2rem;
 }
+@media screen and (max-width:800px){
+    footer .container{
+        flex-direction: column;
+        gap:5rem;
+    }
+}
+
 /* Footer end */
