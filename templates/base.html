@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h3>
+                    <a href="/">
+                        <span>Bluspan</span> Professional <br> Services
+                    </a>
+                </h3>
+            </div>
+            <ul class="links">
+                <li><a href="/about">About <span>us</span></a></li>
+                <li><a href="/values">Our <span>Core Values</span></a></li>
+                <li><a href="/services"> Industries <span>We Serve</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1>
+                Bluspan Professional Services
+            </h1>
+        </section>
+        {% block main_content %}{% endblock %}
+    </main>
+    <footer>
+        <h3>Let's Talk</h3>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">hey@companyemail.com</a>
+                </li>
+                <li>Location of company</li>
+            </ul>
+            <ul>
+                <li><a>Link to social media</a></li>
+                <li><a>Link to social media</a></li>
+                <li><a>Link to social media</a></li>
+            </ul>
+            <ul>
+                <li><a>Link to recently asked questions</a></li>
+                <li><a>phone Number</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
