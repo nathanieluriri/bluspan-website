@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@100;300;400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --white:#F5FBFC;
+    --darkLinkBlue:#004F94;
+    --paleLinkBlue:#286F7D;
+    --darkBackgroundBlue:#003088;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* Navbar start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    align-items: center;
+    width:100%;
+    margin-right: auto;
+ 
+    position:absolute;
+    top:0;
+    text-align: center;
+    padding:1rem ;
+    padding-right:15% ;
+}
+nav a{
+    text-decoration: none;
+    color:var(--white);
+}
+nav .logo{
+    font-size: 1.3rem;
+}
+
+nav .logo span{
+color:var(--darkLinkBlue);
+}
+nav .links{
+    display:flex;
+    justify-content: space-between;
+    flex-basis:50%;   
+    padding:0;
+    list-style-type: none;
+}
+nav .links span{
+color:var(--paleLinkBlue);
+}
+nav .links a{
+    font-size: 1.2rem;
+}
+nav .hamburger-btn {
+    width:3.5rem;
+    height:3.2rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    padding-block:0.8rem;
+    display: grid;
+    place-items:center;
+
+}
+nav .hamburger-btn div{
+    width:2rem;
+    height:2px;
+    background:black;
+    position:relative;
+    transition:transform 1s;
+}
+nav .hamburger-btn:hover div:nth-of-type(1){
+    transform:rotate(-35deg) translateY(0.5rem);
+    left:-3px;
+}
+nav .hamburger-btn:hover div:nth-of-type(2){
+    opacity:0;
+}
+nav .hamburger-btn:hover div:nth-of-type(3){
+    transform:rotate(35deg) translateY(-0.5rem);
+    left:-3px;
+}
+
+
+/* Navbar end */
+/* Hero section start*/
+.hero-section{
+background-image:linear-gradient(to bottom right, #29BBD8 60%,rgba(0,0,0,0.8));
+padding-block:15rem;
+text-align:center;
+}
+.hero-section h1{
+    font-size: 3rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    color:var(--white);
+    line-height: 3.5rem;
+    margin:auto;
+    width:45%;
+    position:relative;
+    padding-block:0.5rem;
+    padding-inline: 1.5rem;
+}
+.hero-section h1::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:30%;
+    height:50%;
+    border:2px solid var(--white);
+    border-bottom:none;
+    border-right:none;
+
+}
+.hero-section h1::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:30%;
+    height:50%;
+    border:2px solid var(--white);
+    border-top:none;
+    border-left:none;
+
+}
+/* Hero section end */
+
+/* Hero main section start */
+.home-main-section {
+    padding-inline: 10%;
+    padding-block:5rem;
+    /* margin-block: 5rem; */
+}
+.home-main-section h3{
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+}
+.home-main-section h3 span{
+    color: #29BBD8;
+}
+.home-main-section .container{
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    gap:8rem;
+    flex-wrap: wrap;
+}
+.home-main-section .container .agenda-card{
+    display: grid;
+    place-items: center;
+}
+.home-main-section .container .agenda-card .card-image{
+    width:6.5rem; 
+    height:6.5rem;
+    text-align: center;
+    display:grid;
+    place-items:center;
+    border-radius: 50%;
+    font-size:2.5rem;
+    position:relative;
+    margin-bottom: 5rem;
+    color:var(--white);
+    font-weight: 300;
+}
+.home-main-section .container .agenda-card:nth-of-type(1) .card-image{
+    background-color:#6FD1D1;
+
+}
+.home-main-section .container .agenda-card:nth-of-type(2) .card-image{
+    background-color:#1BB8D7;
+
+}
+.home-main-section .container .agenda-card:nth-of-type(3) .card-image{
+    background-color:#018FFF;
+
+}
+.home-main-section .container .agenda-card:nth-of-type(4) .card-image{
+    background-color:#165C80;
+    justify-self: center;
+}
+.home-main-section .container .agenda-card .card-image::after{
+    content:"";
+    position:absolute;
+    width: 200%;
+    height:3px;
+    background-color:inherit;
+    bottom:-45%;
+}
+.home-main-section .container .agenda-card .card-title{
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+@media screen and (max-width:800px){
+    .home-main-section .container{
+        flex-direction: column;
+        gap:5rem;
+    }
+}
+/* Hero main section end*/
+
+/* Footer start */
+footer{
+    padding:2rem;
+    background-color:var(--darkBackgroundBlue);
+}
+footer h3{
+    font-size:1.8rem;
+    color:var(--white);
+    margin-bottom:1.5rem;
+}
+footer .container{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+footer ul{
+    padding:0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    color:var(--white);   
+}
+footer ul a{
+color:var(--white);
+}
+footer ul:not(:first-of-type){
+    gap:1rem;
+    
+}
+footer ul:first-of-type{
+    gap:2rem;
+}
+@media screen and (max-width:800px){
+    footer .container{
+        flex-direction: column;
+        gap:5rem;
+    }
+}
+
+/* Footer end */
