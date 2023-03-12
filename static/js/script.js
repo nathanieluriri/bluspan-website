@@ -1,4 +1,4 @@
-let menuBtn=document.querySelector(".hamburger-btn")
+let menuBtn=document.querySelector("nav .hamburger-btn")
 let navLinks=document.querySelector("nav .links")
 let navbar=document.querySelector("nav")
 let main=document.querySelector("main")
