@@ -1,0 +1,24 @@
+
+/* about us main section start*/
+.about-us-main-section{
+
+padding: 0.8rem;
+line-height: 1.5rem;
+}
+.about-us-main-section h2
+{
+    font-weight: 400;
+    line-height: 36.7px;
+    padding-bottom: 2rem;
+    padding-top: 5.5rem;
+}
+.about-us-main-section article
+{
+    
+   margin-bottom: 5rem;
+}
+.blue-building{
+background-color: #000000;
+}
+
+/* about us main section end*/
