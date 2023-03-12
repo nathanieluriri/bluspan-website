@@ -12,5 +12,8 @@ def home():
 def industriesWeServe():
     return render_template("industries-we-serve.html")
     
+@app.route("/about")
+def about():
+    return render_template('aboutus.html')
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')
