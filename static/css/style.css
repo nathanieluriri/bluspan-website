@@ -17,6 +17,11 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
+@media screen and (max-width:800px){
+    body.no-scroll{
+        overflow-y: hidden;
+    }
+}
 /* Navbar start */
 nav {
   display: flex;
@@ -64,22 +69,22 @@ nav .links span {
 }
 nav .links a {
   font-size: 1.2rem;
-  position:relative;
+  position: relative;
 }
-nav .links a::after{
-    content:"";
-    width:100%;
-    position:absolute;
-    bottom:-10%;
-    left:0;
-    height:2px;
-    background-color: var(--paleLinkBlue);
-    transform:scaleX(0);
-    transform-origin: left;
-    transition:0.5s ease;
+nav .links a::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 2px;
+  background-color: var(--paleLinkBlue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease;
 }
-nav .links li:hover a::after{
-    transform:scaleX(1);
+nav .links li:hover a::after {
+  transform: scaleX(1);
 }
 nav .hamburger-btn {
   width: 3rem;
@@ -142,13 +147,13 @@ nav .hamburger-btn.open div:nth-of-type(3) {
     gap: 2rem;
     text-align: left;
     padding-inline: 5%;
-    visibility:hidden;
+    visibility: hidden;
     opacity: 0;
-    transition: visibility 1s,opacity 0.5s, gap 1s;
+    transition: visibility 1s, opacity 0.5s, gap 1s;
   }
   nav .links.open {
     /* transform:scale(1); */
-    visibility:visible;
+    visibility: visible;
     opacity: 1;
     border-radius: 0;
     gap: 5rem;
@@ -204,19 +209,21 @@ nav .hamburger-btn.open div:nth-of-type(3) {
   border-bottom: none;
   border-right: none;
   animation-name: slide-from-left;
-  animation-duration:0.5s;
-  animation-timing-function:ease;
-  
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
 }
-@keyframes slide-from-left{
-    from{
-        opacity:0;
-        left:-30%;
-    }
-    to{
-        opacity:1;
-        left:0;
-    }
+@keyframes slide-from-left {
+  from {
+    transform: scale(0);
+    transform-origin: top left;
+    opacity: 0;
+    left: -30%;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    left: 0;
+  }
 }
 .hero-section h1::after {
   content: "";
@@ -229,19 +236,21 @@ nav .hamburger-btn.open div:nth-of-type(3) {
   border-top: none;
   border-left: none;
   animation-name: slide-from-right;
-  animation-duration:0.5s;
-  animation-timing-function:ease;
-  
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
 }
-@keyframes slide-from-right{
-    from{
-        opacity:0;
-        right:-30%;
-    }
-    to{
-        opacity:1;
-        right:0;
-    }
+@keyframes slide-from-right {
+  from {
+    transform: scale(0);
+    transform-origin: bottom right;
+    opacity: 0;
+    right: -30%;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    right: 0;
+  }
 }
 
 /* Hero section end */
@@ -290,25 +299,20 @@ nav .hamburger-btn.open div:nth-of-type(3) {
   color: var(--white);
   font-weight: 300;
 }
-.home-main-section .container .agenda-card:nth-of-type(1) .card-image 
-{
+.home-main-section .container .agenda-card:nth-of-type(1) .card-image {
   background-color: #6fd1d1;
 }
-.home-main-section .container .agenda-card:nth-of-type(2) .card-image 
-{
+.home-main-section .container .agenda-card:nth-of-type(2) .card-image {
   background-color: #1bb8d7;
 }
-.home-main-section .container .agenda-card:nth-of-type(3) .card-image 
-{
+.home-main-section .container .agenda-card:nth-of-type(3) .card-image {
   background-color: #018fff;
 }
-.home-main-section .container .agenda-card:nth-of-type(4) .card-image 
-{
+.home-main-section .container .agenda-card:nth-of-type(4) .card-image {
   background-color: #165c80;
   justify-self: center;
 }
-.home-main-section .container .agenda-card .card-image::after 
-{
+.home-main-section .container .agenda-card .card-image::after {
   content: "";
   position: absolute;
   width: 150%;

@@ -1,0 +1,28 @@
+{% extends "base.html "%}
+
+{%block title%}Industries we serve &mdash; Bluspan {% endblock %}
+{%block styleSheet%}<link rel="stylesheet" href="{{ url_for('static', filename='css/industries-we-serve.css') }}">{% endblock %}
+
+{%block hero_text%}Who we do it for?{%endblock%}
+
+{%block main_content%}
+<section class="services-main-section">
+    <h3>Industries <span>We Serve</span></h3>
+    <div class="image-container">
+        <img src="/static/assests/imgs/industries-we-serve.svg" alt="industires we serve">
+        <p>How can we serve <span>these industries</span>?</p>
+    </div>
+    <div class="text">
+        <div>
+            <h4>Education</h4>
+            <p>Overall by working regulation Company,an education business can improve it's financial management and compliance, reduce tax-liabilities and make better informed business decisions.</p>
+        </div>
+        <div>
+        <h4>Automobile</h4>
+            <p>The automobile industry is global with complex international tax laws and regulations including transfer pricing, tax treaties and foreign tax credits. A tax regulation company can assist automobile companies in navigating these complexities </p>
+        </div>
+        <div>It's the same with the other sectors mentioned above and any other industry that wasn't mentioned too
+        </div>
+    </div>
+</section>
+{%endblock%}

@@ -1,0 +1,55 @@
+.services-main-section{
+    padding-inline:5%;
+    padding-block: 5rem;
+}
+.services-main-section h3{
+    margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+
+}
+.services-main-section h3 span{
+    color: #29bbd8;
+}
+.services-main-section .image-container{
+    width:100%;
+}
+.services-main-section .image-container img{
+width:100%;
+}
+.services-main-section .image-container p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-block: 1.2rem;
+}
+.services-main-section .image-container p span{
+    color: #29bbd8;
+}
+
+.text{
+    display:grid;
+    gap:1rem;
+}
+.text h4{
+    font-size: 1.2rem;
+    margin-bottom:1.2rem;
+}
+.text div:nth-of-type(3){
+    /* grid-column: 1/3; */
+}
+@media screen and (min-width:800px) {
+    .services-main-section{
+        padding-inline:10%;
+    }
+    .text{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        gap:1.2rem;
+        margin-block-start:2rem;
+    }
+    .text div:nth-of-type(3){
+        grid-column: 1/3;
+    }
+    
+}
