@@ -14,11 +14,15 @@ line-height: 1.5rem;
 }
 .about-us-main-section article
 {
-    
+
    margin-bottom: 5rem;
 }
-.blue-building{
-background-color: #000000;
+.about-us-main-section .container .blue-building{
+    background-color: black;
+    width: 6.5rem;
+    height: 6.5rem;
+
+  
 }
 
 /* about us main section end*/
