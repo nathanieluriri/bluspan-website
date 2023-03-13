@@ -4,8 +4,9 @@ let navbar = document.querySelector("nav");
 let main = document.querySelector("main");
 let hero = document.querySelector("section.hero-section");
 menuBtn.onclick = (e) => {
-  e.target.classList.toggle("open");
-  navLinks.classList.toggle("open");
+  e.target.classList.toggle("open")
+  navLinks.classList.toggle("open")
+  document.querySelector("body").classList.toggle("no-scroll")
 };
 
 // IntersectionObserver for the main content add navbar scrolling background
