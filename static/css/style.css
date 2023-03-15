@@ -2,6 +2,24 @@
 html {
   scroll-behavior: smooth;
 }
+#company-introduction{
+  text-decoration: none;
+  color: black;
+}
+#team{
+  text-decoration: none;
+  color: black;
+}
+#Problems
+{
+  text-decoration: none;
+  color: black;
+}
+#Services
+{
+  text-decoration: none;
+  color: black;
+}
 :root {
   --white: #f5fbfc;
   --darkLinkBlue: #004f94;

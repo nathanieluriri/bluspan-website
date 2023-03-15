@@ -1,12 +1,21 @@
 
 /* about us main section start*/
-.about-us-main-section{
+.about-us-main-section
+{
+    
+    border: 1px solid red;
 
 padding: 0.8rem;
 line-height: 1.5rem;
 }
+.about-us-main-section .container {
+    display: flexbox;
+    
+}
 .about-us-main-section h2
+
 {
+    border: 1px solid red;
     font-weight: 400;
     line-height: 36.7px;
     padding-bottom: 2rem;
@@ -14,10 +23,15 @@ line-height: 1.5rem;
 }
 .about-us-main-section article
 {
+    width: 50%;
+    border: 1px solid red;
 
    margin-bottom: 5rem;
 }
 .about-us-main-section .container .blue-building{
+    position: relative;
+
+    border: 1px solid red;
     background-color: black;
     width: 6.5rem;
     height: 6.5rem;
@@ -26,3 +40,7 @@ line-height: 1.5rem;
 }
 
 /* about us main section end*/
+
+*{
+    box-sizing: border-box;
+}
