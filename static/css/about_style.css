@@ -1,9 +1,17 @@
 
 /* about us main section start*/
+
+@media screen and (max-width:800px) {
+
+    .about-us-main-section .container .content{
+        display: flexbox;
+    }
+
+}
 .about-us-main-section
 {
     
-    border: 1px solid red;
+   
 
 padding: 0.8rem;
 line-height: 1.5rem;
@@ -12,10 +20,16 @@ line-height: 1.5rem;
     display: flexbox;
     
 }
+@media screen and (min-width:900px){
+    .about-us-main-section .container .content{
+        display: flex;
+    }
+}
+
 .about-us-main-section h2
 
 {
-    border: 1px solid red;
+
     font-weight: 400;
     line-height: 36.7px;
     padding-bottom: 2rem;
@@ -23,24 +37,22 @@ line-height: 1.5rem;
 }
 .about-us-main-section article
 {
-    width: 50%;
-    border: 1px solid red;
+    
+
 
    margin-bottom: 5rem;
 }
-.about-us-main-section .container .blue-building{
+.about-us-main-section .container .content .blue-building{
     position: relative;
 
-    border: 1px solid red;
-    background-color: black;
-    width: 6.5rem;
-    height: 6.5rem;
-
-  
+ 
+ 
+   width: 100%;
+    
 }
+.about-us-main-section .container .content .blue-building img{
+    width: 100%;
+}
+
 
 /* about us main section end*/
-
-*{
-    box-sizing: border-box;
-}
