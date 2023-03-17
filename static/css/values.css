@@ -1,0 +1,16 @@
+.Values-main-section{
+    display: block;
+}
+
+.Values-main-section .pic{
+    
+    
+    resize: both;
+    overflow: auto;
+    padding: 5rem;
+
+}
+.Values-main-section .pic img{
+    width: 95%;
+ height: 95%;
+}

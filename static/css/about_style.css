@@ -18,8 +18,6 @@
 .about-us-main-section
 {
     
-   
-
 padding: 0.8rem;
 line-height: 1.5rem;
 }
@@ -79,17 +77,50 @@ line-height: 1.5rem;
 
 }
 .about-us-main-section .container  .mission{
-    padding: 4rem;
+    padding: 3rem;
     display: flex;
 
 }
+
 }
 @media screen and (max-width:900px) {
+    .about-us-main-section .container  .vision{
+        display: flex;
+        /* padding-left:3rem; */
+        
+    }
+
+    .about-us-main-section .container  .vision img{
+        width: 100%;
+        
+        overflow:hidden;
+        padding-left: 1rem;
+        padding-right: 1.3rem;
+        
+
+        
+    }
+    .about-us-main-section .container  .mission{
+        display: flex;
+        
+    }
+    .about-us-main-section .container  .mission img{
+        width: 300%;
+        
+        overflow:hidden;
+        
+        
+        
+    }
+
     .about-us-main-section .container  .mission img{
         content:url('/static/assests/imgs/mission\ for\ smaller\ screens.svg');
     }
     .about-us-main-section .container .vision img{
         content: url('/static/assests/imgs/vision\ for\ smaller\ screens.svg');
+    }
+    .about-us-main-section .container .vision{
+        width: 100%;
     }
 }
 /* about us main section end*/
