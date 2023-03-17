@@ -57,6 +57,39 @@ line-height: 1.5rem;
 .about-us-main-section .container .content .blue-building img{
     width: 100%;
 }
+.about-us-main-section .container #sub{
+    font-weight: 300;
+    color: #018FFF;
+    padding-left: 20%;
+    padding-right: 10%;
+}
+.about-us-main-section .container .mission h2{
+    color: #018FFF;
+    font-weight: 300;
+}
+.about-us-main-section .container .vision h2{
+    color: #286D7B;
+    font-weight: 300;
+}
+@media screen and (min-width:900px){
+.about-us-main-section .container  .vision{
+    padding: 4rem;
+    display: flex;
 
 
+}
+.about-us-main-section .container  .mission{
+    padding: 4rem;
+    display: flex;
+
+}
+}
+@media screen and (max-width:900px) {
+    .about-us-main-section .container  .mission img{
+        content:url('/static/assests/imgs/mission\ for\ smaller\ screens.svg');
+    }
+    .about-us-main-section .container .vision img{
+        content: url('/static/assests/imgs/vision\ for\ smaller\ screens.svg');
+    }
+}
 /* about us main section end*/
