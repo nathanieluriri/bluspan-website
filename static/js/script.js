@@ -1,38 +1,21 @@
-let menuBtn = document.querySelector("nav .hamburger-btn");
-let navLinks = document.querySelector("nav .links");
-let navbar = document.querySelector("nav");
-let main = document.querySelector("main");
-let hero = document.querySelector("section.hero-section");
+let menuBtn = document.querySelector("nav .hamburger-btn")
+let navLinks = document.querySelector("nav .links")
+let navbar = document.querySelector("nav")
+let main = document.querySelector("main")
+let hero = document.querySelector("section.hero-section")
 menuBtn.onclick = (e) => {
   e.target.classList.toggle("open")
   navLinks.classList.toggle("open")
   document.querySelector("body").classList.toggle("no-scroll")
-};
+}
 
-// IntersectionObserver for the main content add navbar scrolling background
-const mainContentObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        navbar.classList.add("scrolling");
-      }
-    });
-  },
-  {
-    threshold: 0.5,
+window.addEventListener('scroll', function() {
+  // Check if the user has scrolling 100px or more from the top of the page
+  if (window.scrollY >= 300) {
+    // Add the "scrolling" class to the navigation element
+    navbar.classList.add('scrolling')
+  } else {
+    // Remove the "scrolling" class from the navigation element
+    navbar.classList.remove('scrolling')
   }
-);
-mainContentObserver.observe(main);
-
-// IntersectionObserver for the hero section to remove navbar scrolling background
-const heroObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        navbar.classList.remove("scrolling");
-      }
-    });
-  },
-  { threshold: 0.75, rootMargin: "0px 0px 0px 0px" }
-);
-heroObserver.observe(hero);
+})
